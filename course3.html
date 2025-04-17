@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="C Course on Skillswap">
+    <title>Java course - Skillswap</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            width: 95%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #1c87c9;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+
+        header p {
+            font-size: 1.1em;
+            margin-top: 8px;
+            opacity: 0.8;
+        }
+
+        .main-content {
+            flex: 3;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-right: 20px;
+        }
+
+        .course-info {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .course-info h2 {
+            font-size: 2em;
+            color: #1c87c9;
+        }
+
+        .course-info p {
+            font-size: 1.1em;
+            margin-top: 10px;
+            color: #555;
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        video {
+            max-width: 100%;
+            height: auto;
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+        }
+
+        video:hover {
+            transform: scale(1.05);
+        }
+
+        .video-library {
+            flex: 1;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-library h3 {
+            text-align: center;
+            font-size: 1.8em;
+            color: #1c87c9;
+            margin-bottom: 20px;
+        }
+
+        .video-library ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .video-library li {
+            background-color: white;
+            margin-bottom: 12px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        .video-library li:hover {
+            background-color: #1c87c9;
+            color: white;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+            transform: scale(1.03);
+        }
+
+        .video-library li:active {
+            background-color: #145a8d;
+            transform: scale(0.98);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .main-content {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Skillswap</h1>
+        <p>Learn and Share Skills</p>
+    </header>
+
+    <div class="container">
+        <!-- Main content section -->
+        <div class="main-content">
+            <div class="course-info">
+                <h2>Java Course</h2>
+                <p>Welcome to the Java Course! Watch the video below to learn more.</p>
+            </div>
+
+            <div class="video-container">
+                <!-- Main video player -->
+                <video id="mainVideo" controls>
+                    <source src="Intro.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <!-- Video library section -->
+        <div class="video-library">
+            <h3> Java Course</h3>
+            <ul>
+                <a href="vdtp1.html">
+                    <li onclick="">Lesson 1: Variables</li>
+                </a>
+                <a href="inc2.html">
+                    <li onclick="">Lesson 2: Datatypes</li>
+                </a>
+                <a href="lp1.html">
+                    <li onclick="">Lesson 3: Loops</li>
+                </a>
+                <a href="fn1.html">
+                    <li onclick="">Lesson 4: Functions</li>
+                </a>
+                <a href="pn1.html">
+                    <li onclick="">Lesson 5: Array</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function changeVideo(videoFile) {
+            var videoElement = document.getElementById("mainVideo");
+            videoElement.src = videoFile;
+            videoElement.play();
+        }
+    </script>
+</body>
+
+</html>

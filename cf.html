@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="C Course - [TOPIC NAME] on Skillswap">
+    <title>C Course - Strings in C - Skillswap</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .main-content {
+            flex: 3;
+        }
+        .video-library {
+            flex: 1;
+            margin-left: 20px;
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        video {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+        }
+        .course-info {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .video-library h3 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .video-library ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .video-library li {
+            background-color: #fff;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .video-library li:hover {
+            background-color: #eaeaea;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Skillswap</h1>
+        <p>Learn and Share Skills</p>
+    </header>
+
+    <div class="container">
+        <!-- Main content section -->
+        <div class="main-content">
+            <div class="course-info">
+                <h2>Strings in C</h2>
+                <p>Welcome to the C Course - Strings in C! Watch the video below to learn more.</p>
+            </div>
+
+            <div class="video-container">
+                <!-- Main video player -->
+                <video id="mainVideo" controls>
+                    <source src="Strings.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <!-- Video library section (queue) -->
+        <div class="video-library">
+            <h3>Up Next</h3>
+            <ul>
+                <li onclick="changeVideo('Strings.mp4')">Lesson 1: Strings in C</li>
+                <li onclick="changeVideo('video2.mp4')">Lesson 2: Concatination</li>
+                <li onclick="changeVideo('video3.mp4')">Lesson 3: Exercise</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function changeVideo(videoFile) {
+            var videoElement = document.getElementById("mainVideo");
+            videoElement.src = videoFile;
+            videoElement.play();
+        }
+    </script>
+</body>
+</html>

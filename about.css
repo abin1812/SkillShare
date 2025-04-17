@@ -1,0 +1,215 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #003366; 
+    /* Semi-transparent background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Add shadow to make it look distinct */
+    border-bottom: 2px solid #fff;
+    /* Optional for a more defined line */
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .navbar-toggler {
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.navbar .navbar-toggler:hover {
+    color: #ffcc00;
+}
+
+.navbar .nav-link {
+    color: #fff;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.navbar .nav-link:hover {
+    color: #ffcc00;
+}
+.hero-section {
+    background-image: url(https://img.freepik.com/free-vector/geometric-science-education-background-vector-gradient-blue-digital-remix_53876-125993.jpg?w=996&t=st=1724826444~exp=1724827044~hmac=97581a3ba5408fc3c5fbba819227981b17aa3d4acc611c8f8c80afab24e1dc45); /* Hero background image */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    color: white; /* Text color */
+    padding: 100px 0; /* Padding around the hero section */
+    text-align: center; /* Center the text */
+}
+
+.hero-section h1 {
+    font-size: 3rem; /* Font size for the main heading */
+    margin: 0; /* Remove default margin */
+    animation: fadeIn 2s ease-in-out; /* Fade in animation */
+    color: #ffcc00; /* Color for main heading */
+}
+
+.hero-section p {
+    font-size: 1.5rem; /* Font size for paragraph */
+    margin-top: 10px; /* Top margin for spacing */
+    animation: fadeIn 2s ease-in-out 0.5s; /* Fade in animation */
+    color: white; /* Color for paragraph */
+}
+
+.about-us-section {
+    background: #e0f7fa; /* Background color */
+    padding: 60px 20px; /* Padding around the section */
+    color: #333; /* Text color */
+}
+
+.about-us-section .container {
+    max-width: 1200px; /* Maximum width for the container */
+    margin: 0 auto; /* Center the container */
+}
+
+.about-us-section img {
+    width: 100%; /* Full width images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for images */
+    animation: slideInLeft 1s ease-in-out; /* Slide in animation */
+}
+
+.about-us-section h2 {
+    font-size: 2.5rem; /* Font size for subsection heading */
+    margin-bottom: 20px; /* Bottom margin */
+    animation: fadeIn 2s ease-in-out; /* Fade in animation */
+}
+
+.about-us-section p {
+    font-size: 1.2rem; /* Font size for paragraph */
+    margin-bottom: 20px; /* Bottom margin */
+    animation: fadeIn 2s ease-in-out 0.5s; /* Fade in animation */
+}
+
+.btn-custom {
+    background-color: #ffcc00; /* Button background color */
+    border: none; /* Remove border */
+    color: #003366; /* Button text color */
+    padding: 10px 20px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    text-transform: uppercase; /* Uppercase text */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s, color 0.3s; /* Transition effect */
+    display: inline-block; /* Inline block */
+    text-decoration: none; /* Remove underline */
+}
+
+.btn-custom:hover {
+    background-color: #ffb300; /* Hover background color */
+    color: #ffffff; /* Hover text color */
+}
+
+.why-choose-us-section {
+    padding: 60px 20px; /* Padding around the section */
+    background-color: #e3f2fd; /* Background color */
+}
+
+.why-choose-us-section .container {
+    max-width: 1200px; /* Maximum width for the container */
+    margin: 0 auto; /* Center the container */
+}
+
+.why-choose-us-section h2 {
+    font-size: 2.5rem; /* Font size for heading */
+    margin-bottom: 40px; /* Bottom margin */
+    text-align: center; /* Center the text */
+}
+
+.why-choose-us-section .icon {
+    width: 80px; /* Icon width */
+    height: 80px; /* Icon height */
+    margin-bottom: 20px; /* Bottom margin */
+    animation: bounce 1s infinite; /* Bounce animation */
+}
+
+.why-choose-us-section h3 {
+    font-size: 1.5rem; /* Font size for heading */
+    margin-bottom: 10px; /* Bottom margin */
+}
+
+.why-choose-us-section p {
+    font-size: 1rem; /* Font size for paragraph */
+}
+
+.testimonials-section {
+    padding: 60px 20px; /* Padding around the section */
+    background-color: #e0f7fa; /* Background color */
+}
+
+.testimonials-section h2 {
+    font-size: 2.5rem; /* Font size for heading */
+    margin-bottom: 40px; /* Bottom margin */
+    text-align: center; /* Center the text */
+}
+
+.testimonial-item {
+    background-color: #ffffff; /* Background color for testimonials */
+    padding: 20px; /* Padding around the item */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    margin-bottom: 20px; /* Bottom margin */
+    text-align: center; /* Center the text */
+}
+
+.testimonial-img {
+    width: 100px; /* Image width */
+    height: 100px; /* Image height */
+    border-radius: 50%; /* Circular image */
+    margin-bottom: 15px; /* Bottom margin */
+}
+
+.footer {
+    background-color: #003366; /* Footer background color */
+    color: #ffffff; /* Footer text color */
+    padding: 20px 0; /* Padding around footer */
+    text-align: center; /* Center the text */
+}
+
+.footer p {
+    margin: 0; /* Remove default margin */
+}
+
+.footer a {
+    color: #ffcc00; /* Footer link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.footer a:hover {
+    color: #ffb300; /* Hover color for footer links */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-30px); }
+    60% { transform: translateY(-15px); }
+}

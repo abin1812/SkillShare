@@ -1,0 +1,110 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #003366; 
+    color: #ffffff;
+    padding: 10px 20px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    color: #003366; 
+    font-weight: bold; 
+}
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #f1ebeb; 
+    font-weight: bold; 
+}
+
+.navbar .nav-link {
+    margin-left: 15px;
+}
+
+.navbar .nav-link:hover {
+    color: #ffcc00; 
+}
+
+
+
+/* Existing styles from your home.css remain unchanged */
+
+.expert-profile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.profile-card {
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 15px;
+    width: 250px; /* adjust as needed */
+    text-align: center;
+}
+
+.profile-img {
+    border-radius: 100%; /* round image */
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+h2 {
+    font-size: 5rem;
+    margin: 20px 0;
+    color: #ffcc00; /* Heading color changed to #ffcc00 */
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+
+.subheading {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+h3 {
+    margin-top: 40px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
